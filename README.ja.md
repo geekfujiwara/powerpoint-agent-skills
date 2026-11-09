@@ -2,7 +2,7 @@
 
 [<kbd>English</kbd>](README.md) [<kbd>日本語</kbd>](README.ja.md)
 
-**PowerPoint の Copilot（エージェントモード）**向けカスタムスキル集です。
+**PowerPoint の Copilot（エージェントモード）** 向けカスタムスキル集です。
 既存の11スキルを9スキルに整理し、用途・操作範囲・安全性を明確にしました。
 Microsoft 公式製品・公式配布物ではない、コミュニティによる独立したプロジェクトです。
 
@@ -36,7 +36,7 @@ PowerPoint の Copilot と同じアカウントの OneDrive を使用してく�
 
 1. PowerPoint の **Copilot → 設定（…）→ スキルの管理 → カスタムスキル**を開きます。
    表示名は製品の言語・バージョンにより異なる場合があります。
-2. **OneDrive フォルダーの作成（Create OneDrive folder）**を選び、
+2. **OneDrive フォルダーの作成（Create OneDrive folder）** を選び、
    **スキルフォルダーを開く（Open skills folder）**で開きます。
    **PowerPoint が開いたフォルダーを使用してください。**
    ローカルのパスを推測したり、任意の場所に `Skills` を作ったりしないでください。
@@ -46,8 +46,8 @@ PowerPoint の Copilot と同じアカウントの OneDrive を使用してく�
    必要なものだけでも構いません。`skills` や `powerpoint-agent-skills-v1.0.0` という
    外側のフォルダーはコピーしないでください。ライセンス・注意書きは各スキル内に残します。
 5. OneDrive の同期を待ち、PowerPoint の**スキルの管理／カスタムスキル → 更新
-   （Refresh）**を選択し、使いたいスキルを有効にします。
-6. 入力欄の **＋ → スキルの選択（Choose skills）**から選ぶか、
+   （Refresh）** を選択し、使いたいスキルを有効にします。
+6. 入力欄の **＋ → スキルの選択（Choose skills）** から選ぶか、
    `@スキル名` で指定します。VS Code の `/` コマンドとは異なります。
 
 配置例（最上段は PowerPoint が開いたフォルダーを指す仮表記です）:
