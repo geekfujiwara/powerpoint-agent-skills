@@ -27,7 +27,7 @@ license: MIT
    non-sensitive subject, and meaningful alt text.
    The separate `slide-illustrations` skill is optional for more precise fitting;
    this journey layout must remain usable without it or image generation.
-7. Aim for at least 14 pt body text. Do not reuse the original 8.5 pt labels.
+7. Aim for at least 14 pt body text; split dense content rather than shrinking labels.
    Ask before changing meaning to shorten a step.
 8. Inspect path continuity, step order, card spacing, image fit, reading order,
    and editability. Report any simplifications or unsupported capabilities.

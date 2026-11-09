@@ -50,6 +50,6 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           $assets = @(Get-ChildItem -LiteralPath .\dist -File | Select-Object -ExpandProperty FullName)
-          $notes = "Nine independent PowerPoint custom skills. Download the bundle for manual OneDrive installation, or an individual ZIP for Add skill. Includes MIT license and SHA-256 checksums. / 9個のカスタムスキル。一括ZIPは展開してOneDriveへ、個別ZIPはスキルの追加から導入できます。See README.md / README.ja.md for instructions."
+          $notes = "Skills Geek repeatedly uses at work to make PowerPoint agent mode more productive. Download the single ZIP, extract it, and copy all nine skill folders directly into the OneDrive skills folder opened by PowerPoint. Includes the MIT license and a SHA-256 checksum. / Geek が仕事で繰り返し使うスキル集です。ZIP 1個を展開し、中の9個のスキルフォルダーをまとめて PowerPoint から開いた OneDrive スキルフォルダーへコピーしてください。[日本語](https://github.com/geekfujiwara/powerpoint-agent-skills/blob/main/README.md#japanese) / [English](https://github.com/geekfujiwara/powerpoint-agent-skills/blob/main/README.md#english)"
           gh release create $env:GITHUB_REF_NAME @assets --verify-tag --title "PowerPoint Agent Skills $env:GITHUB_REF_NAME" --notes $notes
           if ($LASTEXITCODE -ne 0) { throw 'GitHub release creation failed.' }

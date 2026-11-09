@@ -19,33 +19,25 @@ $skills = @(Get-ChildItem -LiteralPath (Join-Path $root 'skills') -Directory | S
 $license = Join-Path $root 'LICENSE'
 $notice = Join-Path $PSScriptRoot 'package-notice.txt'
 
-function Write-SkillArchive {
-    param([string]$Name, [IO.DirectoryInfo[]]$IncludedSkills)
-    $path = Join-Path $dist $Name
-    $zip = [IO.Compression.ZipFile]::Open($path, [IO.Compression.ZipArchiveMode]::Create)
-    try {
-        foreach ($skill in $IncludedSkills) {
-            $sources = [ordered]@{
-                'SKILL.md' = Join-Path $skill.FullName 'SKILL.md'
-                'LICENSE.txt' = $license
-                'NOTICE.md' = $notice
-            }
-            foreach ($entryName in $sources.Keys) {
-                $entry = $zip.CreateEntry("$($skill.Name)/$entryName", [IO.Compression.CompressionLevel]::Optimal)
-                $entry.LastWriteTime = [DateTimeOffset]::new(2026, 1, 1, 0, 0, 0, [TimeSpan]::Zero)
-                $inputStream = [IO.File]::OpenRead($sources[$entryName])
-                $outputStream = $entry.Open()
-                try { $inputStream.CopyTo($outputStream) }
-                finally { $outputStream.Dispose(); $inputStream.Dispose() }
-            }
+$path = Join-Path $dist "powerpoint-agent-skills-$Version.zip"
+$zip = [IO.Compression.ZipFile]::Open($path, [IO.Compression.ZipArchiveMode]::Create)
+try {
+    foreach ($skill in $skills) {
+        $sources = [ordered]@{
+            'SKILL.md' = Join-Path $skill.FullName 'SKILL.md'
+            'LICENSE.txt' = $license
+            'NOTICE.md' = $notice
         }
-    } finally { $zip.Dispose() }
-}
-
-foreach ($skill in $skills) {
-    Write-SkillArchive -Name "$($skill.Name)-$Version.zip" -IncludedSkills @($skill)
-}
-Write-SkillArchive -Name "powerpoint-agent-skills-$Version.zip" -IncludedSkills $skills
+        foreach ($entryName in $sources.Keys) {
+            $entry = $zip.CreateEntry("$($skill.Name)/$entryName", [IO.Compression.CompressionLevel]::Optimal)
+            $entry.LastWriteTime = [DateTimeOffset]::new(2026, 1, 1, 0, 0, 0, [TimeSpan]::Zero)
+            $inputStream = [IO.File]::OpenRead($sources[$entryName])
+            $outputStream = $entry.Open()
+            try { $inputStream.CopyTo($outputStream) }
+            finally { $outputStream.Dispose(); $inputStream.Dispose() }
+        }
+    }
+} finally { $zip.Dispose() }
 $hashes = @(Get-ChildItem -LiteralPath $dist -Filter '*.zip' -File | Sort-Object Name | ForEach-Object {
     $hash = (Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
     "$hash  $($_.Name)"

@@ -22,7 +22,7 @@ license: MIT
    Label each region directly. Make clear whether the boundary is illustrative
    or calculated from a documented criterion.
 6. Keep titles, axis labels, legend, annotations, and card text readable.
-   Aim for at least 14 pt body text; do not reproduce the original small
-   10 pt card text by default. Shorten with approval or split dense content.
+   Aim for at least 14 pt body text. Shorten with approval or split dense content
+   rather than shrinking labels.
 7. Check labels, contrast, values, units, curve meaning, editability, and overlap.
    Ensure the chart does not imply unsupported precision, and report limitations.

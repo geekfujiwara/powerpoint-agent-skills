@@ -75,19 +75,13 @@ if ($PackageDirectory) {
     $licenseBytes = [IO.File]::ReadAllBytes((Join-Path $root 'LICENSE'))
     $noticeBytes = [IO.File]::ReadAllBytes((Join-Path $root 'scripts\package-notice.txt'))
     $expectedAssets = @("powerpoint-agent-skills-$Version.zip", 'SHA256SUMS.txt')
-    $expectedAssets += @($skills | ForEach-Object { "$($_.Name)-$Version.zip" })
     $actualAssets = @(Get-ChildItem -LiteralPath $packageRoot -File | Select-Object -ExpandProperty Name)
     if (@(Compare-Object ($expectedAssets | Sort-Object) ($actualAssets | Sort-Object)).Count) {
         throw 'Package directory contains missing or unexpected release assets.'
     }
     foreach ($archiveName in $expectedAssets | Where-Object { $_.EndsWith('.zip') }) {
-        $included = if ($archiveName -eq "powerpoint-agent-skills-$Version.zip") {
-            $skills
-        } else {
-            @($skills | Where-Object { "$($_.Name)-$Version.zip" -ceq $archiveName })
-        }
         $entries = @{}
-        foreach ($skill in $included) {
+        foreach ($skill in $skills) {
             $entries["$($skill.Name)/SKILL.md"] = [IO.File]::ReadAllBytes((Join-Path $skill.FullName 'SKILL.md'))
             $entries["$($skill.Name)/LICENSE.txt"] = $licenseBytes
             $entries["$($skill.Name)/NOTICE.md"] = $noticeBytes
@@ -118,6 +112,6 @@ if ($PackageDirectory) {
         $hash = (Get-FileHash -LiteralPath (Join-Path $packageRoot $zipNames[$i]) -Algorithm SHA256).Hash.ToLowerInvariant()
         if ($checksums[$i] -cne "$hash  $($zipNames[$i])") { throw "Checksum mismatch: $($zipNames[$i])" }
     }
-    Write-Output "Validated 10 ZIPs, exact contents, and SHA-256 checksums for $Version."
+    Write-Output "Validated 1 ZIP containing all 9 skill folders, exact contents, and SHA-256 checksum for $Version."
 }
 Write-Output 'Validated 9 skill definitions, local links, and publication text checks.'
