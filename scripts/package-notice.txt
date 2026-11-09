@@ -1,0 +1,19 @@
+# PowerPoint Agent Skills
+
+Independent community skills for Copilot in PowerPoint; not a Microsoft product
+or endorsement. Copyright (c) 2026 geekfujiwara. See LICENSE.txt for the MIT license.
+
+Source and bilingual installation instructions:
+https://github.com/geekfujiwara/powerpoint-agent-skills
+
+Place this skill folder directly inside the OneDrive skills folder opened from
+PowerPoint's Manage skills > Custom skills > Open skills folder, then refresh.
+Keep the folder name and SKILL.md frontmatter name identical.
+
+PowerPoint のスキル管理から開いた OneDrive フォルダーの直下に、このスキルの
+フォルダーを配置して更新してください。フォルダー名と SKILL.md の name は一致させます。
+日本語の導入手順:
+https://github.com/geekfujiwara/powerpoint-agent-skills/blob/main/README.ja.md
+
+Skills provide instructions, not guaranteed runtime capabilities. Back up important
+decks and review generated results. Never include private information in public copies.
