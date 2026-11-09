@@ -25,6 +25,18 @@ Microsoft 公式製品・公式配布物ではない、個人による独立し�
 - <strong>伝わる形にする：</strong>文章を要約し、伝えたい結論に合う図解へ最適化する。
 - <strong>仕上げを効率化する：</strong>重複図形を確認し、控えめな動きを付ける。
 
+### 作成例
+
+以下は作成できるスライドの一例です。決まった型に当てはめるのではなく、
+内容や目的などのコンテキストに応じて、伝わりやすい構成を選びます。
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3c4e5267-4995-492c-bd00-a8acf2cc5af6" width="49%" alt="要求から開発・審議・デプロイまでの AI エージェントと人間の役割分担を示すスライド">
+  <img src="https://github.com/user-attachments/assets/dab165a8-c8fe-4178-b06b-7ba1aea89d12" width="49%" alt="PowerPoint スライドの作成例 2">
+  <img src="https://github.com/user-attachments/assets/cecdeeeb-632f-418d-86aa-997ff7fc6313" width="49%" alt="PowerPoint スライドの作成例 3">
+  <img src="https://github.com/user-attachments/assets/7ab06bdb-f9cd-496f-87e5-b021b2a4e5f6" width="49%" alt="PowerPoint スライドの作成例 4">
+</p>
+
 ### スキルの違いと使い方
 
 | スキル | 主な用途 | 関連性・依頼例 |
@@ -165,6 +177,19 @@ This is an independent personal project, not a Microsoft product or endorsement.
 - <strong>Polish the design:</strong> coordinate themes, illustrations, and emphasis.
 - <strong>Explain clearly:</strong> refine text and optimize diagram structures around the intended message.
 - <strong>Finish efficiently:</strong> review duplicate shapes and add restrained motion.
+
+### Example slides
+
+These are examples of slides the skills can help create. Rather than forcing a
+fixed template, they select a clear structure based on the content, purpose, and
+other context.
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3c4e5267-4995-492c-bd00-a8acf2cc5af6" width="49%" alt="Slide showing how AI agents and people share work from requirements through development, review, and deployment">
+  <img src="https://github.com/user-attachments/assets/dab165a8-c8fe-4178-b06b-7ba1aea89d12" width="49%" alt="PowerPoint slide example 2">
+  <img src="https://github.com/user-attachments/assets/cecdeeeb-632f-418d-86aa-997ff7fc6313" width="49%" alt="PowerPoint slide example 3">
+  <img src="https://github.com/user-attachments/assets/7ab06bdb-f9cd-496f-87e5-b021b2a4e5f6" width="49%" alt="PowerPoint slide example 4">
+</p>
 
 ### Choose and use a skill
 
