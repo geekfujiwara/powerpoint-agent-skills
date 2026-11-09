@@ -39,18 +39,18 @@ Microsoft 公式製品・公式配布物ではない、個人による独立し�
 
 ### スキルの違いと使い方
 
-| スキル | 主な用途 | 関連性・依頼例 |
+| スキル | 主な用途 | 制作例 |
 |---|---|---|
-| [optimize-slide-diagram](skills/optimize-slide-diagram/SKILL.md) | 既存の記述から主張・関係を整理し、図解の型と構成を最適化 | テーマの見た目変更や特定の型の作成とは別。`@optimize-slide-diagram このページに書いてあることをもとに、伝えたい結論が一目で分かる図解にして。デザインは変えないで。` |
-| [presentation-theme](skills/presentation-theme/SKILL.md) | 明暗デザイン、表紙、箱庭風の区切りページ | デッキ全体の見た目。アニメーションは別。`@presentation-theme 区切りは暗く、本文は明るいカード型に統一して。` |
-| [slide-illustrations](skills/slide-illustrations/SKILL.md) | カードに収まるフラットイラスト | 2つの画風から選択。ジャーニー図の補助にも。`@slide-illustrations このカードに青系の挿絵を、切り抜かずに追加して。` |
-| [highlight-key-points](skills/highlight-key-points/SKILL.md) | 箇条書き化と重要語の青色強調 | 見た目全体ではなく文章の整理。`@highlight-key-points この段落を箇条書きにし、重要語だけ青くして。` |
-| [remove-duplicate-shapes](skills/remove-duplicate-shapes/SKILL.md) | 重複生成された図形の整理 | 単なる重なり修正とは別。`@remove-duplicate-shapes このページの重複候補を、削除せず一覧にして。` |
-| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | フェード＋下からの順次表示 | レイアウト確定後に使用。同じカード内は同時に表示。`@fade-in-rise-animation 3ページ目を上から順に表示し、タイトルは固定して。` |
-| [gradient-fill](skills/gradient-fill/SKILL.md) | 図形・文字のグラデーション | 部分的な装飾。デッキ全体の変更とは別。`@gradient-fill このタイトル文字だけ青紫のグラデーションにして。` |
-| [hierarchy-diagram](skills/hierarchy-diagram/SKILL.md) | 親子関係、組織図、展開状況 | 時系列ではなく階層の表現。`@hierarchy-diagram この本部と3部門の関係を編集可能な図にして。` |
-| [long-tail-chart](skills/long-tail-chart/SKILL.md) | ロングテールの概念・実データ比較 | 概念図は明示、実データはネイティブグラフ。`@long-tail-chart 架空の数値を入れず、ロングテールの概念図を作って。` |
-| [journey-map](skills/journey-map/SKILL.md) | 波線＋交互カードの工程図 | 挿絵は slide-illustrations で補完可能。`@journey-map この5段階の引き継ぎをカードと波線で図解して。` |
+| [optimize-slide-diagram](skills/optimize-slide-diagram/SKILL.md) | 既存の記述から主張・関係を整理し、図解の型と構成を最適化 | 制作例の画像を配置予定 |
+| [presentation-theme](skills/presentation-theme/SKILL.md) | 明暗デザイン、表紙、箱庭風の区切りページ | 制作例の画像を配置予定 |
+| [slide-illustrations](skills/slide-illustrations/SKILL.md) | カードに収まるフラットイラスト | 制作例の画像を配置予定 |
+| [highlight-key-points](skills/highlight-key-points/SKILL.md) | 箇条書き化と重要語の青色強調 | 制作例の画像を配置予定 |
+| [remove-duplicate-shapes](skills/remove-duplicate-shapes/SKILL.md) | 重複生成された図形の整理 | 制作例の画像を配置予定 |
+| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | フェード＋下からの順次表示 | 制作例の画像を配置予定 |
+| [gradient-fill](skills/gradient-fill/SKILL.md) | 図形・文字のグラデーション | 制作例の画像を配置予定 |
+| [hierarchy-diagram](skills/hierarchy-diagram/SKILL.md) | 親子関係、組織図、展開状況 | 制作例の画像を配置予定 |
+| [long-tail-chart](skills/long-tail-chart/SKILL.md) | ロングテールの概念・実データ比較 | 制作例の画像を配置予定 |
+| [journey-map](skills/journey-map/SKILL.md) | 波線＋交互カードの工程図 | 制作例の画像を配置予定 |
 
 各スキルは単独で導入できます。Python やローカルスクリプト、他スキルは必須ではありません。
 発見用の説明文は日英併記、スキル本文は英語です。出力言語は依頼に従います。
@@ -193,18 +193,18 @@ other context.
 
 ### Choose and use a skill
 
-| Skill | Best for | Related skills / example request |
+| Skill | Best for | Work samples |
 |---|---|---|
-| [optimize-slide-diagram](skills/optimize-slide-diagram/SKILL.md) | Restructuring an existing explanation around its takeaway and relationships | Not a theme change or a fixed diagram recipe. `@optimize-slide-diagram Use what this slide already says to make its takeaway clear at a glance. Keep the existing design.` |
-| [presentation-theme](skills/presentation-theme/SKILL.md) | Whole-deck light/dark styling; covers and diorama dividers | Sets the visual language; does not add animation. `@presentation-theme Restyle this deck with dark dividers and light content pages.` |
-| [slide-illustrations](skills/slide-illustrations/SKILL.md) | Flat artwork sized to cards or empty slots | Optional companion to journey maps; supports two alternative art styles. `@slide-illustrations Add blue business illustrations to these cards without cropping.` |
-| [highlight-key-points](skills/highlight-key-points/SKILL.md) | Bullets and selective blue emphasis | Text refinement, not a theme change. `@highlight-key-points Turn this paragraph into bullets and highlight key phrases.` |
-| [remove-duplicate-shapes](skills/remove-duplicate-shapes/SKILL.md) | Confirmed duplicate cleanup | Maintenance, not general overlap repair. `@remove-duplicate-shapes Find duplicates on this slide and show me a deletion preview.` |
-| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | Subtle automatic sequential reveals | Apply after layout is stable; reveal each card's content together. `@fade-in-rise-animation Animate slide 3 top-to-bottom; keep its title fixed.` |
-| [gradient-fill](skills/gradient-fill/SKILL.md) | Shape or text gradients without outlines | Local formatting, not deck restyling. `@gradient-fill Apply a blue-purple gradient to this title only.` |
-| [hierarchy-diagram](skills/hierarchy-diagram/SKILL.md) | Parent/child organization or rollout states | Relationships, not a temporal journey. `@hierarchy-diagram Show this parent team and its three departments.` |
-| [long-tail-chart](skills/long-tail-chart/SKILL.md) | Head/tail comparisons, conceptual or data-based | Native charts for actual data; concepts explicitly labeled. `@long-tail-chart Draw a conceptual long-tail diagram without invented values.` |
-| [journey-map](skills/journey-map/SKILL.md) | Ordered handoffs or multi-stage journeys | Optional card artwork from slide-illustrations. `@journey-map Show these five handoff steps with alternating cards.` |
+| [optimize-slide-diagram](skills/optimize-slide-diagram/SKILL.md) | Restructuring an existing explanation around its takeaway and relationships | Work sample images coming soon |
+| [presentation-theme](skills/presentation-theme/SKILL.md) | Whole-deck light/dark styling; covers and diorama dividers | Work sample images coming soon |
+| [slide-illustrations](skills/slide-illustrations/SKILL.md) | Flat artwork sized to cards or empty slots | Work sample images coming soon |
+| [highlight-key-points](skills/highlight-key-points/SKILL.md) | Bullets and selective blue emphasis | Work sample images coming soon |
+| [remove-duplicate-shapes](skills/remove-duplicate-shapes/SKILL.md) | Confirmed duplicate cleanup | Work sample images coming soon |
+| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | Subtle automatic sequential reveals | Work sample images coming soon |
+| [gradient-fill](skills/gradient-fill/SKILL.md) | Shape or text gradients without outlines | Work sample images coming soon |
+| [hierarchy-diagram](skills/hierarchy-diagram/SKILL.md) | Parent/child organization or rollout states | Work sample images coming soon |
+| [long-tail-chart](skills/long-tail-chart/SKILL.md) | Head/tail comparisons, conceptual or data-based | Work sample images coming soon |
+| [journey-map](skills/journey-map/SKILL.md) | Ordered handoffs or multi-stage journeys | Work sample images coming soon |
 
 All skills are independently installable. No skill requires a local script,
 Python, or another skill. Their bilingual descriptions aid discovery; instructions
