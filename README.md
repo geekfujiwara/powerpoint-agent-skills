@@ -22,13 +22,14 @@ Microsoft 公式製品・公式配布物ではない、個人による独立し�
 ### どんな作業を楽にするか
 
 - <strong>見た目を整える：</strong>テーマ、挿絵、強調色をそろえる。
-- <strong>伝わる形にする：</strong>文章を要約し、組織・工程・分布を図解する。
+- <strong>伝わる形にする：</strong>文章を要約し、伝えたい結論に合う図解へ最適化する。
 - <strong>仕上げを効率化する：</strong>重複図形を確認し、控えめな動きを付ける。
 
 ### スキルの違いと使い方
 
 | スキル | 主な用途 | 関連性・依頼例 |
 |---|---|---|
+| [optimize-slide-diagram](skills/optimize-slide-diagram/SKILL.md) | 既存の記述から主張・関係を整理し、図解の型と構成を最適化 | テーマの見た目変更や特定の型の作成とは別。`@optimize-slide-diagram このページに書いてあることをもとに、伝えたい結論が一目で分かる図解にして。デザインは変えないで。` |
 | [presentation-theme](skills/presentation-theme/SKILL.md) | 明暗デザイン、表紙、箱庭風の区切りページ | デッキ全体の見た目。アニメーションは別。`@presentation-theme 区切りは暗く、本文は明るいカード型に統一して。` |
 | [slide-illustrations](skills/slide-illustrations/SKILL.md) | カードに収まるフラットイラスト | 2つの画風から選択。ジャーニー図の補助にも。`@slide-illustrations このカードに青系の挿絵を、切り抜かずに追加して。` |
 | [highlight-key-points](skills/highlight-key-points/SKILL.md) | 箇条書き化と重要語の青色強調 | 見た目全体ではなく文章の整理。`@highlight-key-points この段落を箇条書きにし、重要語だけ青くして。` |
@@ -41,6 +42,16 @@ Microsoft 公式製品・公式配布物ではない、個人による独立し�
 
 各スキルは単独で導入できます。Python やローカルスクリプト、他スキルは必須ではありません。
 発見用の説明文は日英併記、スキル本文は英語です。出力言語は依頼に従います。
+
+#### 既存ページの図解を見直したいとき
+
+`optimize-slide-diagram` は、選択中の1枚の記述と提供資料をもとに、伝えたい結論から
+比較・フロー・階層・収束などの型を選び直します。フォント・配色・背景は維持します。
+主張が曖昧な場合は案を提示し、不足する根拠は質問します。外部検索は依頼時のみです。
+重複図形は検出・報告までとし、削除は別途承認後に扱います。
+
+作る型が決まっている場合は `hierarchy-diagram` や `journey-map`、
+デッキ全体の見た目を変える場合は `presentation-theme` を選んでください。
 
 ### OneDrive の正しい場所に配置する
 
@@ -55,10 +66,10 @@ PowerPoint の Copilot と同じアカウントの OneDrive を使用してく�
    <strong>PowerPoint が開いたフォルダーを使用してください。</strong>
    ローカルのパスを推測したり、任意の場所に `Skills` を作ったりしないでください。
 3. [Releases](https://github.com/geekfujiwara/powerpoint-agent-skills/releases/latest)
-   にある<strong>全スキル入りの ZIP 1個</strong>（例：`powerpoint-agent-skills-v1.0.1.zip`）をダウンロードし、
-   PC上で「すべて展開」します。解凍先のフォルダーに、9個のスキルフォルダーが並びます。
-4. 解凍先にある<strong>9個のスキルフォルダーをまとめて選び、OneDrive のスキルフォルダー直下へコピー</strong>します。
-   必要なものだけでも構いません。`skills` や `powerpoint-agent-skills-v1.0.1` という
+   にある<strong>全スキル入りの ZIP 1個</strong>（例：`powerpoint-agent-skills-v1.1.0.zip`）をダウンロードし、
+   PC上で「すべて展開」します。解凍先のフォルダーに、10個のスキルフォルダーが並びます。
+4. 解凍先にある<strong>スキルフォルダーをすべて選び、OneDrive のスキルフォルダー直下へコピー</strong>します。
+   必要なものだけでも構いません。`skills` や `powerpoint-agent-skills-v1.1.0` という
    外側のフォルダーはコピーしないでください。ライセンス・注意書きは各スキル内に残します。
 5. OneDrive の同期を待ち、PowerPoint の<strong>スキルの管理／カスタムスキル → 更新（Refresh）</strong>を選択し、
    使いたいスキルを有効にします。
@@ -80,6 +91,8 @@ PowerPoint の Copilot と同じアカウントの OneDrive を使用してく�
   journey-map\
     SKILL.md
   long-tail-chart\
+    SKILL.md
+  optimize-slide-diagram\
     SKILL.md
   presentation-theme\
     SKILL.md
@@ -106,7 +119,7 @@ OneDrive にコピーする必要はありません。
 ### 使う順番と組み合わせ
 
 1. 対象範囲とテーマを決め、文章・元データを渡します。
-2. 階層図・工程図・ロングテールなど、目的に合う図解を作ります。
+2. 既存ページは `optimize-slide-diagram` で主張に合う構成を選ぶか、型が決まっていれば階層図・工程図などを作ります。
 3. 必要な挿絵を加え、文章・強調色を整えます。
 4. 重複があれば候補を確認してから削除を承認します。
 5. アニメーションは最後に適用し、スライドショーで再生確認します。
@@ -150,13 +163,14 @@ This is an independent personal project, not a Microsoft product or endorsement.
 ### What these skills help with
 
 - <strong>Polish the design:</strong> coordinate themes, illustrations, and emphasis.
-- <strong>Explain clearly:</strong> refine text and visualize hierarchies, journeys, and distributions.
+- <strong>Explain clearly:</strong> refine text and optimize diagram structures around the intended message.
 - <strong>Finish efficiently:</strong> review duplicate shapes and add restrained motion.
 
 ### Choose and use a skill
 
 | Skill | Best for | Related skills / example request |
 |---|---|---|
+| [optimize-slide-diagram](skills/optimize-slide-diagram/SKILL.md) | Restructuring an existing explanation around its takeaway and relationships | Not a theme change or a fixed diagram recipe. `@optimize-slide-diagram Use what this slide already says to make its takeaway clear at a glance. Keep the existing design.` |
 | [presentation-theme](skills/presentation-theme/SKILL.md) | Whole-deck light/dark styling; covers and diorama dividers | Sets the visual language; does not add animation. `@presentation-theme Restyle this deck with dark dividers and light content pages.` |
 | [slide-illustrations](skills/slide-illustrations/SKILL.md) | Flat artwork sized to cards or empty slots | Optional companion to journey maps; supports two alternative art styles. `@slide-illustrations Add blue business illustrations to these cards without cropping.` |
 | [highlight-key-points](skills/highlight-key-points/SKILL.md) | Bullets and selective blue emphasis | Text refinement, not a theme change. `@highlight-key-points Turn this paragraph into bullets and highlight key phrases.` |
@@ -171,6 +185,17 @@ All skills are independently installable. No skill requires a local script,
 Python, or another skill. Their bilingual descriptions aid discovery; instructions
 are in English and preserve the user's requested output language.
 
+#### Improve an existing diagram
+
+`optimize-slide-diagram` uses the selected slide's content and supplied evidence
+to choose a comparison, flow, hierarchy, convergence, or another suitable structure.
+It preserves the deck's fonts, palette, and background. It proposes unclear
+takeaways, asks for missing evidence, and searches externally only when requested.
+Duplicate candidates are reported, not deleted; cleanup needs separate approval.
+
+Use `hierarchy-diagram` or `journey-map` when the required type is already known,
+and `presentation-theme` when you want to change the deck's overall visual style.
+
 ### Install in the correct OneDrive folder
 
 Use the OneDrive account associated with your PowerPoint Copilot session.
@@ -182,12 +207,12 @@ and rollout. If the skills UI is missing, verify availability with your administ
    Use the folder PowerPoint opens; do not guess a local path or create a random
    `Skills` folder. Its displayed name/location can vary by account or product version.
 3. Download the <strong>single ZIP containing all skills</strong>
-   (for example, `powerpoint-agent-skills-v1.0.1.zip`) from
+   (for example, `powerpoint-agent-skills-v1.1.0.zip`) from
    [Releases](https://github.com/geekfujiwara/powerpoint-agent-skills/releases/latest)
-   and choose Extract All. The extraction folder contains all nine skill folders.
-4. Select <strong>all nine extracted skill folders</strong> and copy them directly into that
+   and choose Extract All. The extraction folder contains all ten skill folders.
+4. Select <strong>all extracted skill folders</strong> and copy them directly into that
    OneDrive skills folder. Do not copy the repository root or add an extra `skills`
-   or `powerpoint-agent-skills-v1.0.1` wrapper folder. You may install only selected
+   or `powerpoint-agent-skills-v1.1.0` wrapper folder. You may install only selected
    skill folders. Keep the bundled license/notice inside each skill folder.
 5. Wait for OneDrive sync, return to <strong>Manage skills / Custom skills</strong>,
    select <strong>Refresh</strong>, and enable the desired skills.
@@ -209,6 +234,8 @@ Expected structure (the first line is a placeholder for the folder opened by Pow
   journey-map\
     SKILL.md
   long-tail-chart\
+    SKILL.md
+  optimize-slide-diagram\
     SKILL.md
   presentation-theme\
     SKILL.md
@@ -234,7 +261,8 @@ it does not need to be copied to OneDrive.
 ### Recommended workflow
 
 1. Choose the scope and theme; supply source content and data.
-2. Build the appropriate hierarchy, journey, or long-tail visual.
+2. For an existing slide, use `optimize-slide-diagram` to choose a structure for
+   its message, or use a specific diagram skill when the required type is known.
 3. Add optional illustrations, then refine text and gradients.
 4. Preview duplicates before approving cleanup.
 5. Apply optional animation last and verify in slide-show mode.

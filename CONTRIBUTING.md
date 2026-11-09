@@ -23,8 +23,8 @@ Run from the repository root with PowerShell 7:
 
 ```powershell
 pwsh -NoProfile -File .\scripts\Test-Skills.ps1
-pwsh -NoProfile -File .\scripts\New-SkillPackages.ps1 -Version v1.0.1
-pwsh -NoProfile -File .\scripts\Test-Skills.ps1 -PackageDirectory .\dist -Version v1.0.1
+pwsh -NoProfile -File .\scripts\New-SkillPackages.ps1 -Version v1.1.0
+pwsh -NoProfile -File .\scripts\Test-Skills.ps1 -PackageDirectory .\dist -Version v1.1.0
 ```
 
 Maintainers release by pushing a new `vMAJOR.MINOR.PATCH` tag after these checks.

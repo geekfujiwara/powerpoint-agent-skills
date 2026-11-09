@@ -10,12 +10,12 @@ Set-StrictMode -Version Latest
 $root = Split-Path $PSScriptRoot -Parent
 $expected = @(
     'fade-in-rise-animation', 'gradient-fill', 'hierarchy-diagram',
-    'highlight-key-points', 'journey-map', 'long-tail-chart',
+    'highlight-key-points', 'journey-map', 'long-tail-chart', 'optimize-slide-diagram',
     'presentation-theme', 'remove-duplicate-shapes', 'slide-illustrations'
 )
 $skills = @(Get-ChildItem -LiteralPath (Join-Path $root 'skills') -Directory | Sort-Object Name)
 if (($skills.Name -join ',') -cne ($expected -join ',')) {
-    throw 'Skill folders do not match the expected nine-skill catalog.'
+    throw "Skill folders do not match the expected $($expected.Count)-skill catalog."
 }
 
 foreach ($skill in $skills) {
@@ -112,6 +112,6 @@ if ($PackageDirectory) {
         $hash = (Get-FileHash -LiteralPath (Join-Path $packageRoot $zipNames[$i]) -Algorithm SHA256).Hash.ToLowerInvariant()
         if ($checksums[$i] -cne "$hash  $($zipNames[$i])") { throw "Checksum mismatch: $($zipNames[$i])" }
     }
-    Write-Output "Validated 1 ZIP containing all 9 skill folders, exact contents, and SHA-256 checksum for $Version."
+    Write-Output "Validated 1 ZIP containing all $($skills.Count) skill folders, exact contents, and SHA-256 checksum for $Version."
 }
-Write-Output 'Validated 9 skill definitions, local links, and publication text checks.'
+Write-Output "Validated $($skills.Count) skill definitions, local links, and publication text checks."

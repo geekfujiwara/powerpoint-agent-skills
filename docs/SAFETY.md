@@ -13,6 +13,8 @@
 - 重複図形は見た目や位置だけで削除せず、内容・書式・依存関係を確認し、プレビューを承認してから削除します。
 - 既存のアニメーションを置き換える場合は、失われる動作を確認してから承認してください。
 - 実データと概念図を区別し、数値・出典・注記が正しいか確認してください。
+- 図解の最適化では、既存の記述と提供資料を根拠にします。不足する情報は質問し、
+  外部検索は依頼された場合だけ行います。図の簡略化で対立・不確実性・留保を消さないでください。
 - 秘密情報や個人・顧客情報を公開スキルに含めないでください。
   画像生成には、利用を承認した非機密のシーン説明だけを使用してください。
 
@@ -29,7 +31,7 @@
 ### PowerPoint で確認すること
 
 1. OneDrive の所定フォルダーへ配置後、更新してスキルが認識されること。
-2. 解凍先の9個のスキルフォルダーが、余分な親フォルダーを挟まず配置されていること。
+2. 解凍先のすべてのスキルフォルダーが、余分な親フォルダーを挟まず配置されていること。
 3. `@スキル名` で呼び出し、指定した範囲だけが編集されること。
 4. 文字・図形の可読性、重なり、編集可能性、数値・出典、対象外の内容が保たれていること。
 5. 重複削除では、承認した図形だけが削除されること。
@@ -53,6 +55,9 @@
   Position or visual similarity alone does not establish a duplicate.
 - Review any animations that would be lost before approving timing replacement.
 - Distinguish real data from conceptual diagrams; check values, sources, and notes.
+- Diagram optimization uses existing content and supplied evidence. Ask for
+  missing information and search externally only when requested. Simplification
+  must not erase disagreements, uncertainty, or qualifications.
 - Never include secrets or personal/customer data in public skills.
   Use only approved non-sensitive scene descriptions for image generation.
 
@@ -69,7 +74,7 @@ Formal compliance does not imply Microsoft certification or guaranteed results.
 ### Checks in PowerPoint
 
 1. Place a skill in the app-created OneDrive folder, refresh, and confirm discovery.
-2. Confirm all nine extracted skill folders are placed without an extra wrapper folder.
+2. Confirm all extracted skill folders are placed without an extra wrapper folder.
 3. Invoke `@skill-name` and verify that only the requested scope changes.
 4. Check typography, contrast, fit, editability, data, citations, and preservation
    of unrelated slide content.
