@@ -34,7 +34,7 @@ Microsoft 公式製品・公式配布物ではない、個人による独立し�
 | [slide-illustrations](skills/slide-illustrations/SKILL.md) | カードに収まるフラットイラスト | 2つの画風から選択。ジャーニー図の補助にも。`@slide-illustrations このカードに青系の挿絵を、切り抜かずに追加して。` |
 | [highlight-key-points](skills/highlight-key-points/SKILL.md) | 箇条書き化と重要語の青色強調 | 見た目全体ではなく文章の整理。`@highlight-key-points この段落を箇条書きにし、重要語だけ青くして。` |
 | [remove-duplicate-shapes](skills/remove-duplicate-shapes/SKILL.md) | 重複生成された図形の整理 | 単なる重なり修正とは別。`@remove-duplicate-shapes このページの重複候補を、削除せず一覧にして。` |
-| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | フェード＋下からの順次表示 | レイアウト確定後に使用。`@fade-in-rise-animation 3ページ目を上から順に表示し、タイトルは固定して。` |
+| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | フェード＋下からの順次表示 | レイアウト確定後に使用。同じカード内は同時に表示。`@fade-in-rise-animation 3ページ目を上から順に表示し、タイトルは固定して。` |
 | [gradient-fill](skills/gradient-fill/SKILL.md) | 図形・文字のグラデーション | 部分的な装飾。デッキ全体の変更とは別。`@gradient-fill このタイトル文字だけ青紫のグラデーションにして。` |
 | [hierarchy-diagram](skills/hierarchy-diagram/SKILL.md) | 親子関係、組織図、展開状況 | 時系列ではなく階層の表現。`@hierarchy-diagram この本部と3部門の関係を編集可能な図にして。` |
 | [long-tail-chart](skills/long-tail-chart/SKILL.md) | ロングテールの概念・実データ比較 | 概念図は明示、実データはネイティブグラフ。`@long-tail-chart 架空の数値を入れず、ロングテールの概念図を作って。` |
@@ -175,7 +175,7 @@ This is an independent personal project, not a Microsoft product or endorsement.
 | [slide-illustrations](skills/slide-illustrations/SKILL.md) | Flat artwork sized to cards or empty slots | Optional companion to journey maps; supports two alternative art styles. `@slide-illustrations Add blue business illustrations to these cards without cropping.` |
 | [highlight-key-points](skills/highlight-key-points/SKILL.md) | Bullets and selective blue emphasis | Text refinement, not a theme change. `@highlight-key-points Turn this paragraph into bullets and highlight key phrases.` |
 | [remove-duplicate-shapes](skills/remove-duplicate-shapes/SKILL.md) | Confirmed duplicate cleanup | Maintenance, not general overlap repair. `@remove-duplicate-shapes Find duplicates on this slide and show me a deletion preview.` |
-| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | Subtle automatic sequential reveals | Apply after layout is stable. `@fade-in-rise-animation Animate slide 3 top-to-bottom; keep its title fixed.` |
+| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | Subtle automatic sequential reveals | Apply after layout is stable; reveal each card's content together. `@fade-in-rise-animation Animate slide 3 top-to-bottom; keep its title fixed.` |
 | [gradient-fill](skills/gradient-fill/SKILL.md) | Shape or text gradients without outlines | Local formatting, not deck restyling. `@gradient-fill Apply a blue-purple gradient to this title only.` |
 | [hierarchy-diagram](skills/hierarchy-diagram/SKILL.md) | Parent/child organization or rollout states | Relationships, not a temporal journey. `@hierarchy-diagram Show this parent team and its three departments.` |
 | [long-tail-chart](skills/long-tail-chart/SKILL.md) | Head/tail comparisons, conceptual or data-based | Native charts for actual data; concepts explicitly labeled. `@long-tail-chart Draw a conceptual long-tail diagram without invented values.` |
