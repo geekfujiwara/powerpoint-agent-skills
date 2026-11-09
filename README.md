@@ -71,50 +71,47 @@ PowerPoint の Copilot と同じアカウントの OneDrive を使用してく�
 利用可否は Microsoft 365 の契約、組織の設定、提供状況によって異なります。
 スキルのメニューがない場合は、管理者に利用条件を確認してください。
 
-1. PowerPoint の <strong>Copilot → 設定（…）→ スキルの管理 → カスタムスキル</strong>を開きます。
+1. PowerPoint の <strong>Copilot → + → Choose plugins を開きます。
    表示名は製品の言語・バージョンにより異なる場合があります。
-2. <strong>OneDrive フォルダーの作成（Create OneDrive folder）</strong>を選び、
-   <strong>スキルフォルダーを開く（Open skills folder）</strong>で開きます。
+   
+   <img width="361" height="321" alt="image" src="https://github.com/user-attachments/assets/1b2f04b1-6237-40fb-8728-1ea2d502d344" />
+
+2. Manage plugins を選択します。
+
+   <img width="353" height="403" alt="image" src="https://github.com/user-attachments/assets/16b75863-eed6-4b22-bd30-3f953d0e43f9" />
+
+3. カスタムスキルを有効化し、選択します。
+
+   <img width="320" height="209" alt="image" src="https://github.com/user-attachments/assets/e16cd4f1-50ac-4726-9e1b-641c2207d847" />
+
+4.    <strong>スキルフォルダー（Open skills folder）</strong>を開きます。
    <strong>PowerPoint が開いたフォルダーを使用してください。</strong>
+
+   <img width="334" height="231" alt="image" src="https://github.com/user-attachments/assets/2cb8e235-361d-4887-9c2e-8fd9eb947fe6" />
+
    ローカルのパスを推測したり、任意の場所に `Skills` を作ったりしないでください。
-3. [Releases](https://github.com/geekfujiwara/powerpoint-agent-skills/releases/latest)
-   にある<strong>全スキル入りの ZIP 1個</strong>（例：`powerpoint-agent-skills-v1.1.0.zip`）をダウンロードし、
-   PC上で「すべて展開」します。解凍先のフォルダーに、10個のスキルフォルダーが並びます。
-4. 解凍先にある<strong>スキルフォルダーをすべて選び、OneDrive のスキルフォルダー直下へコピー</strong>します。
-   必要なものだけでも構いません。`skills` や `powerpoint-agent-skills-v1.1.0` という
-   外側のフォルダーはコピーしないでください。ライセンス・注意書きは各スキル内に残します。
-5. OneDrive の同期を待ち、PowerPoint の<strong>スキルの管理／カスタムスキル → 更新（Refresh）</strong>を選択し、
+5. [Releases](https://github.com/geekfujiwara/powerpoint-agent-skills/releases/latest)
+   にある<strong>全スキル入りの ZIP 1個</strong>（例：`powerpoint-agent-skills-v*.*.*.zip`）をダウンロードし、
+   PC上で「すべて展開」します。展開先のフォルダーに、各種スキルフォルダーが並びます。
+
+6. 展開先にある<strong>スキルフォルダーをすべて、または必要なスキルを選択して、OneDrive のスキルフォルダー直下へコピー</strong>します。
+   `skills` や `powerpoint-agent-skills-v*.*.0` という
+   外側のフォルダーはコピーしないでください。
+   
+   <img width="610" height="509" alt="image" src="https://github.com/user-attachments/assets/441d3cc6-fb94-4c63-a0bc-e498aeae6811" />
+
+7. OneDrive の同期を行います。PowerPoint の<strong>スキルの管理／カスタムスキル → 更新（Refresh）</strong>を選択し同期します。
    使いたいスキルを有効にします。
-6. 入力欄の <strong>＋ → スキルの選択（Choose skills）</strong>から選ぶか、
-   `@スキル名` で指定します。VS Code の `/` コマンドとは異なります。
 
-配置例（最上段は PowerPoint が開いたフォルダーを指す仮表記です）:
+   <img width="335" height="235" alt="image" src="https://github.com/user-attachments/assets/7f1e9f07-2763-4019-aec0-187b43337553" />
 
-```text
-<PowerPoint が開いた OneDrive スキルフォルダー>\
-  fade-in-rise-animation\
-    SKILL.md
-  gradient-fill\
-    SKILL.md
-  hierarchy-diagram\
-    SKILL.md
-  highlight-key-points\
-    SKILL.md
-  journey-map\
-    SKILL.md
-  long-tail-chart\
-    SKILL.md
-  optimize-slide-diagram\
-    SKILL.md
-  presentation-theme\
-    SKILL.md
-    LICENSE.txt
-    NOTICE.md
-  remove-duplicate-shapes\
-    SKILL.md
-  slide-illustrations\
-    SKILL.md
-```
+8. 使いたいスキルを有効にします。
+   <img width="333" height="685" alt="image" src="https://github.com/user-attachments/assets/6bbf5202-c42d-4307-a64b-553bdc17286d" />
+   これでスキルのインストールは完了です。利用する際は、PowerPoint Copilot の入力欄の <strong> ＋ → プラグインの選択（Choose plugins）</strong>から選ぶか、
+   `@スキル名` で指定します。
+   (VS Code の `/` コマンドとは異なりますので注意してください)
+<img width="333" height="224" alt="image" src="https://github.com/user-attachments/assets/cf198e26-aa33-4b5f-b790-d4a86496ccf9" />
+
 
 すべてのスキルフォルダーに `LICENSE.txt` と `NOTICE.md` も同梱しています。
 ファイル名は必ず `SKILL.md` にします。先頭の YAML の `name` と、
