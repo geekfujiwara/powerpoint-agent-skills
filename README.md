@@ -39,18 +39,21 @@ Microsoft 公式製品・公式配布物ではない、個人による独立し�
 
 ### スキルの違いと使い方
 
-| スキル | 主な用途 | 制作例 |
+動画は各52秒、日本語テロップ付き・無音です。表のプレーヤーで再生できます。
+録画された操作例であり、各スキルのすべての機能を実演するものではありません。
+
+| スキル | 主な用途 | 制作例・デモ動画 |
 |---|---|---|
-| [optimize-slide-diagram](skills/optimize-slide-diagram/SKILL.md) | 既存の記述から主張・関係を整理し、図解の型と構成を最適化 | 制作例の画像を配置予定 |
-| [presentation-theme](skills/presentation-theme/SKILL.md) | 明暗デザイン、表紙、箱庭風の区切りページ | 制作例の画像を配置予定 |
-| [slide-illustrations](skills/slide-illustrations/SKILL.md) | カードに収まるフラットイラスト | 制作例の画像を配置予定 |
-| [highlight-key-points](skills/highlight-key-points/SKILL.md) | 箇条書き化と重要語の青色強調 | 制作例の画像を配置予定 |
-| [remove-duplicate-shapes](skills/remove-duplicate-shapes/SKILL.md) | 重複生成された図形の整理 | 制作例の画像を配置予定 |
-| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | フェード＋下からの順次表示 | 制作例の画像を配置予定 |
-| [gradient-fill](skills/gradient-fill/SKILL.md) | 図形・文字のグラデーション | 制作例の画像を配置予定 |
-| [hierarchy-diagram](skills/hierarchy-diagram/SKILL.md) | 親子関係、組織図、展開状況 | 制作例の画像を配置予定 |
-| [long-tail-chart](skills/long-tail-chart/SKILL.md) | ロングテールの概念・実データ比較 | 制作例の画像を配置予定 |
-| [journey-map](skills/journey-map/SKILL.md) | 波線＋交互カードの工程図 | 制作例の画像を配置予定 |
+| [optimize-slide-diagram](skills/optimize-slide-diagram/SKILL.md) | 既存の記述から主張・関係を整理し、図解の型と構成を最適化 | https://github.com/user-attachments/assets/7e64e436-28ed-4006-9474-0c057e5407b1 |
+| [presentation-theme](skills/presentation-theme/SKILL.md) | 明暗デザイン、表紙、箱庭風の区切りページ | https://github.com/user-attachments/assets/10c2998f-7be9-4390-8a75-9cc581ca2bc8 |
+| [slide-illustrations](skills/slide-illustrations/SKILL.md) | カードに収まるフラットイラスト | https://github.com/user-attachments/assets/412f0b63-9673-4977-8e0b-080436497c5d |
+| [highlight-key-points](skills/highlight-key-points/SKILL.md) | 箇条書き化と重要語の青色強調 | https://github.com/user-attachments/assets/c9f85e5d-fcc7-4267-9fa4-41ae2935dfbd |
+| [remove-duplicate-shapes](skills/remove-duplicate-shapes/SKILL.md) | 重複生成された図形の整理 | https://github.com/user-attachments/assets/e6af838f-c3a9-43f8-88a7-a79d55c22496 |
+| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | フェード＋下からの順次表示 | 未収録（動画素材なし） |
+| [gradient-fill](skills/gradient-fill/SKILL.md) | 図形・文字のグラデーション | https://github.com/user-attachments/assets/6f20f3a8-8733-474b-b758-ab3bd73e3df7 |
+| [hierarchy-diagram](skills/hierarchy-diagram/SKILL.md) | 親子関係、組織図、展開状況 | https://github.com/user-attachments/assets/dec4e42d-7350-4f84-bee6-7f721bd8ede3 |
+| [long-tail-chart](skills/long-tail-chart/SKILL.md) | ロングテールの概念・実データ比較 | https://github.com/user-attachments/assets/3333c42f-2eae-47ac-81cf-500adebe20c4 |
+| [journey-map](skills/journey-map/SKILL.md) | 波線＋交互カードの工程図 | https://github.com/user-attachments/assets/afaccd23-27fe-478f-b46b-fc0fd8cfefed |
 
 各スキルは単独で導入できます。Python やローカルスクリプト、他スキルは必須ではありません。
 発見用の説明文は日英併記、スキル本文は英語です。出力言語は依頼に従います。
@@ -190,18 +193,22 @@ other context.
 
 ### Choose and use a skill
 
-| Skill | Best for | Work samples |
+Each demo is 52 seconds, with Japanese on-screen captions and no audio.
+Play it directly in the table. These are recorded examples, not demonstrations
+of every capability of each skill.
+
+| Skill | Best for | Work samples and demos |
 |---|---|---|
-| [optimize-slide-diagram](skills/optimize-slide-diagram/SKILL.md) | Restructuring an existing explanation around its takeaway and relationships | Work sample images coming soon |
-| [presentation-theme](skills/presentation-theme/SKILL.md) | Whole-deck light/dark styling; covers and diorama dividers | Work sample images coming soon |
-| [slide-illustrations](skills/slide-illustrations/SKILL.md) | Flat artwork sized to cards or empty slots | Work sample images coming soon |
-| [highlight-key-points](skills/highlight-key-points/SKILL.md) | Bullets and selective blue emphasis | Work sample images coming soon |
-| [remove-duplicate-shapes](skills/remove-duplicate-shapes/SKILL.md) | Confirmed duplicate cleanup | Work sample images coming soon |
-| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | Subtle automatic sequential reveals | Work sample images coming soon |
-| [gradient-fill](skills/gradient-fill/SKILL.md) | Shape or text gradients without outlines | Work sample images coming soon |
-| [hierarchy-diagram](skills/hierarchy-diagram/SKILL.md) | Parent/child organization or rollout states | Work sample images coming soon |
-| [long-tail-chart](skills/long-tail-chart/SKILL.md) | Head/tail comparisons, conceptual or data-based | Work sample images coming soon |
-| [journey-map](skills/journey-map/SKILL.md) | Ordered handoffs or multi-stage journeys | Work sample images coming soon |
+| [optimize-slide-diagram](skills/optimize-slide-diagram/SKILL.md) | Restructuring an existing explanation around its takeaway and relationships | https://github.com/user-attachments/assets/7e64e436-28ed-4006-9474-0c057e5407b1 |
+| [presentation-theme](skills/presentation-theme/SKILL.md) | Whole-deck light/dark styling; covers and diorama dividers | https://github.com/user-attachments/assets/10c2998f-7be9-4390-8a75-9cc581ca2bc8 |
+| [slide-illustrations](skills/slide-illustrations/SKILL.md) | Flat artwork sized to cards or empty slots | https://github.com/user-attachments/assets/412f0b63-9673-4977-8e0b-080436497c5d |
+| [highlight-key-points](skills/highlight-key-points/SKILL.md) | Bullets and selective blue emphasis | https://github.com/user-attachments/assets/c9f85e5d-fcc7-4267-9fa4-41ae2935dfbd |
+| [remove-duplicate-shapes](skills/remove-duplicate-shapes/SKILL.md) | Confirmed duplicate cleanup | https://github.com/user-attachments/assets/e6af838f-c3a9-43f8-88a7-a79d55c22496 |
+| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | Subtle automatic sequential reveals | Not recorded (no source footage) |
+| [gradient-fill](skills/gradient-fill/SKILL.md) | Shape or text gradients without outlines | https://github.com/user-attachments/assets/6f20f3a8-8733-474b-b758-ab3bd73e3df7 |
+| [hierarchy-diagram](skills/hierarchy-diagram/SKILL.md) | Parent/child organization or rollout states | https://github.com/user-attachments/assets/dec4e42d-7350-4f84-bee6-7f721bd8ede3 |
+| [long-tail-chart](skills/long-tail-chart/SKILL.md) | Head/tail comparisons, conceptual or data-based | https://github.com/user-attachments/assets/3333c42f-2eae-47ac-81cf-500adebe20c4 |
+| [journey-map](skills/journey-map/SKILL.md) | Ordered handoffs or multi-stage journeys | https://github.com/user-attachments/assets/afaccd23-27fe-478f-b46b-fc0fd8cfefed |
 
 All skills are independently installable. No skill requires a local script,
 Python, or another skill. Their bilingual descriptions aid discovery; instructions
