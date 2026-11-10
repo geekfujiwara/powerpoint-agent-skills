@@ -109,9 +109,8 @@ PowerPoint の Copilot と同じアカウントの OneDrive を使用してく�
 
 8. 使いたいスキルを有効にします。
    <img width="333" height="685" alt="image" src="https://github.com/user-attachments/assets/6bbf5202-c42d-4307-a64b-553bdc17286d" />
-   これでスキルのインストールは完了です。利用する際は、PowerPoint Copilot の入力欄の <strong> ＋ → プラグインの選択（Choose plugins）</strong>から選ぶか、
-   `@スキル名` で指定します。
-   (VS Code の `/` コマンドとは異なりますので注意してください)
+
+   これでスキルのインストールは完了です。利用する際は、PowerPoint Copilot の入力欄の <strong> ＋ → プラグインの選択（Choose plugins）</strong>から選ぶか、`@スキル名` で指定します。 (VS Code の `/` コマンドとは異なりますので注意してください)
 
    <img width="333" height="224" alt="image" src="https://github.com/user-attachments/assets/cf198e26-aa33-4b5f-b790-d4a86496ccf9" />
 
