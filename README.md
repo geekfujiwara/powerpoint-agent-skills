@@ -49,7 +49,7 @@ Microsoft 公式製品・公式配布物ではない、個人による独立し�
 | [slide-illustrations](skills/slide-illustrations/SKILL.md) | カードに収まるフラットイラスト | https://github.com/user-attachments/assets/412f0b63-9673-4977-8e0b-080436497c5d |
 | [highlight-key-points](skills/highlight-key-points/SKILL.md) | 箇条書き化と重要語の青色強調 | https://github.com/user-attachments/assets/c9f85e5d-fcc7-4267-9fa4-41ae2935dfbd |
 | [remove-duplicate-shapes](skills/remove-duplicate-shapes/SKILL.md) | 重複生成された図形の整理 | https://github.com/user-attachments/assets/e6af838f-c3a9-43f8-88a7-a79d55c22496 |
-| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | フェード＋下からの順次表示 | 未収録（動画素材なし） |
+| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | フェード＋下からの順次表示 | https://github.com/user-attachments/assets/a84beb14-e153-4a94-80f2-c7eeaa105858 |
 | [gradient-fill](skills/gradient-fill/SKILL.md) | 図形・文字のグラデーション | https://github.com/user-attachments/assets/6f20f3a8-8733-474b-b758-ab3bd73e3df7 |
 | [hierarchy-diagram](skills/hierarchy-diagram/SKILL.md) | 親子関係、組織図、展開状況 | https://github.com/user-attachments/assets/dec4e42d-7350-4f84-bee6-7f721bd8ede3 |
 | [long-tail-chart](skills/long-tail-chart/SKILL.md) | ロングテールの概念・実データ比較 | https://github.com/user-attachments/assets/3333c42f-2eae-47ac-81cf-500adebe20c4 |
@@ -204,7 +204,7 @@ of every capability of each skill.
 | [slide-illustrations](skills/slide-illustrations/SKILL.md) | Flat artwork sized to cards or empty slots | https://github.com/user-attachments/assets/412f0b63-9673-4977-8e0b-080436497c5d |
 | [highlight-key-points](skills/highlight-key-points/SKILL.md) | Bullets and selective blue emphasis | https://github.com/user-attachments/assets/c9f85e5d-fcc7-4267-9fa4-41ae2935dfbd |
 | [remove-duplicate-shapes](skills/remove-duplicate-shapes/SKILL.md) | Confirmed duplicate cleanup | https://github.com/user-attachments/assets/e6af838f-c3a9-43f8-88a7-a79d55c22496 |
-| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | Subtle automatic sequential reveals | Not recorded (no source footage) |
+| [fade-in-rise-animation](skills/fade-in-rise-animation/SKILL.md) | Subtle automatic sequential reveals | https://github.com/user-attachments/assets/a84beb14-e153-4a94-80f2-c7eeaa105858 |
 | [gradient-fill](skills/gradient-fill/SKILL.md) | Shape or text gradients without outlines | https://github.com/user-attachments/assets/6f20f3a8-8733-474b-b758-ab3bd73e3df7 |
 | [hierarchy-diagram](skills/hierarchy-diagram/SKILL.md) | Parent/child organization or rollout states | https://github.com/user-attachments/assets/dec4e42d-7350-4f84-bee6-7f721bd8ede3 |
 | [long-tail-chart](skills/long-tail-chart/SKILL.md) | Head/tail comparisons, conceptual or data-based | https://github.com/user-attachments/assets/3333c42f-2eae-47ac-81cf-500adebe20c4 |
