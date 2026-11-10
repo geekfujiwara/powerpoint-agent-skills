@@ -71,7 +71,7 @@ PowerPoint の Copilot と同じアカウントの OneDrive を使用してく�
 利用可否は Microsoft 365 の契約、組織の設定、提供状況によって異なります。
 スキルのメニューがない場合は、管理者に利用条件を確認してください。
 
-1. PowerPoint の <strong>Copilot → + → Choose plugins を開きます。
+1. PowerPoint の <strong>Copilot → + → Choose plugins</strong> を開きます。
    表示名は製品の言語・バージョンにより異なる場合があります。
    
    <img width="361" height="321" alt="image" src="https://github.com/user-attachments/assets/1b2f04b1-6237-40fb-8728-1ea2d502d344" />
@@ -84,7 +84,7 @@ PowerPoint の Copilot と同じアカウントの OneDrive を使用してく�
 
    <img width="320" height="209" alt="image" src="https://github.com/user-attachments/assets/e16cd4f1-50ac-4726-9e1b-641c2207d847" />
 
-4.    <strong>スキルフォルダー（Open skills folder）</strong>を開きます。
+4. <strong>スキルフォルダー（Open skills folder）</strong>を開きます。
    <strong>PowerPoint が開いたフォルダーを使用してください。</strong>
 
    <img width="334" height="231" alt="image" src="https://github.com/user-attachments/assets/2cb8e235-361d-4887-9c2e-8fd9eb947fe6" />
@@ -100,8 +100,7 @@ PowerPoint の Copilot と同じアカウントの OneDrive を使用してく�
    
    <img width="610" height="509" alt="image" src="https://github.com/user-attachments/assets/441d3cc6-fb94-4c63-a0bc-e498aeae6811" />
 
-7. OneDrive の同期を行います。PowerPoint の<strong>スキルの管理／カスタムスキル → 更新（Refresh）</strong>を選択し同期します。
-   使いたいスキルを有効にします。
+7. OneDrive の同期を待ち、PowerPoint の<strong>スキルの管理／カスタムスキル → 更新（Refresh）</strong>を選択します。
 
    <img width="335" height="235" alt="image" src="https://github.com/user-attachments/assets/7f1e9f07-2763-4019-aec0-187b43337553" />
 
@@ -110,7 +109,8 @@ PowerPoint の Copilot と同じアカウントの OneDrive を使用してく�
    これでスキルのインストールは完了です。利用する際は、PowerPoint Copilot の入力欄の <strong> ＋ → プラグインの選択（Choose plugins）</strong>から選ぶか、
    `@スキル名` で指定します。
    (VS Code の `/` コマンドとは異なりますので注意してください)
-<img width="333" height="224" alt="image" src="https://github.com/user-attachments/assets/cf198e26-aa33-4b5f-b790-d4a86496ccf9" />
+
+   <img width="333" height="224" alt="image" src="https://github.com/user-attachments/assets/cf198e26-aa33-4b5f-b790-d4a86496ccf9" />
 
 
 すべてのスキルフォルダーに `LICENSE.txt` と `NOTICE.md` も同梱しています。
